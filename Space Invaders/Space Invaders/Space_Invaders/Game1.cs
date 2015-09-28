@@ -20,7 +20,8 @@ namespace Space_Invaders
         SpriteBatch spriteBatch;
 
         Texture2D ship;
-        Vector2 shippos = new Vector2(50, 183);
+        Vector2 shippos = new Vector2(250, 550);
+        Vector2 shipspeed = new Vector2(0, 0);
 
         public Game1()
         {
@@ -81,6 +82,12 @@ namespace Space_Invaders
 
             // TODO: Add your update logic here
 
+            // Control spaceship
+            KeyboardState keyState = Keyboard.GetState();
+            if (keyState.IsKeyDown(Keys.Left))
+                shippos.X -= 5;
+            else if (keyState.IsKeyDown(Keys.Right))
+                shippos.X += 5;
             base.Update(gameTime);
         }
 
@@ -92,12 +99,13 @@ namespace Space_Invaders
         {
             GraphicsDevice.Clear(Color.Black);
 
+            // TODO: Add your drawing code here
+
             spriteBatch.Begin();
 
             spriteBatch.Draw(ship, shippos, Color.White);
 
             spriteBatch.End();
-            // TODO: Add your drawing code here
 
             base.Draw(gameTime);
         }
