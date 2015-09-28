@@ -19,10 +19,17 @@ namespace Space_Invaders
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Texture2D ship;
+        Vector2 shippos = new Vector2(50, 183);
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            graphics.PreferredBackBufferHeight = 650;
+            graphics.PreferredBackBufferWidth = 600;
+
         }
 
         /// <summary>
@@ -46,8 +53,10 @@ namespace Space_Invaders
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
             // TODO: use this.Content to load your game content here
+
+            //Load spaceship
+            ship = Content.Load<Texture2D>("Images\\spaceship");
         }
 
         /// <summary>
@@ -81,8 +90,13 @@ namespace Space_Invaders
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(ship, shippos, Color.White);
+
+            spriteBatch.End();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
