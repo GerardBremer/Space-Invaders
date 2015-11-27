@@ -11,15 +11,12 @@ namespace Space_Invaders
         Color[] laserTextureData;
 
         public List<Vector2> laserPositions = new List<Vector2>();
-        float LaserSpawnProbability = 0.0005f;
         const int LaserSpeed = -5;
-
-        // Random for laser spawns
-        Random random = new Random();
+        public int nLasers;
 
         public ShipLaser(int x, int y)
         {                         
-            
+            // Load laser texture
             laser = Global.content.Load<Texture2D>("Textures\\laser");
 
             // Extract collision data
@@ -30,18 +27,11 @@ namespace Space_Invaders
 
         public void Update(GameTime gameTime)
         {
-             //Spawn new lasers
-            if (random.NextDouble() < LaserSpawnProbability)
-            {
-                float x = (float)random.NextDouble() *
-                    (Window.ClientBounds.Width - laser.Width);
-                laserPositions.Add(new Vector2(x, -laser.Height));
-            }
-              
-             //Get the bounding rectangle of the ship
-             //Rectangle shipRectangle =
-             //    new Rectangle((int)shipPosition.X, (int)shipPosition.Y,
-              //       ship.Width, ship.Height);
+
+            //Get the bounding rectangle of the ship
+            //Rectangle shipRectangle =
+            //    new Rectangle((int)shipPosition.X, (int)shipPosition.Y,
+            //       ship.Width, ship.Height);
 
             // Update each laser
             //shipHit = false;
@@ -65,27 +55,31 @@ namespace Space_Invaders
                     shipHit = true;
                 } */
 
+                // Give nLasers the same value as number of lasers in the list.
+                nLasers = laserPositions.Count;
+
                 // Remove this laser if it has gone off the screen
-                if (laserPositions[i].Y > Window.ClientBounds.Height)
+                if (laserPositions[i].Y < Window.ClientBounds.Top - laser.Height - 160)
                 {
                     laserPositions.RemoveAt(i);
 
-                    // When removing a laser, the next block will have the same index
-                    // as the current laser. Decrement i to prevent skipping a block.
+                    // When removing a laser, the next laser will have the same index
+                    // as the current laser. Decrement i to prevent skipping a laser.
                     i--;
-                }
 
+                    // Remove 1 from nLasers
+                    nLasers--;
+                }
             }
         }
 
         public void Draw(GameTime gameTime)
         {
-            //Global.spriteBatch.Draw(laser, position, Color.White);
             // Draw lasers  
-            foreach (Vector2 laserPosition in laserPositions)
-            {
-                 Global.spriteBatch.Draw(laser, laserPosition, Color.White);
-            }
+                foreach (Vector2 laserPosition in laserPositions)
+                {
+                    Global.spriteBatch.Draw(laser, laserPosition, Color.White);
+                }
         }   
     }
 }

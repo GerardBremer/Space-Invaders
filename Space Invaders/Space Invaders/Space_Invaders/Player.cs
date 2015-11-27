@@ -9,7 +9,6 @@ namespace Space_Invaders
     class Player : Microsoft.Xna.Framework.Game
     {
         Texture2D ship;
-        Texture2D lasertexture;
         Color[] shipTextureData;
         Vector2 shipPosition;
         const int shipMoveSpeed = 5;
@@ -20,17 +19,10 @@ namespace Space_Invaders
         // Percentage of the screen on every side is the safe area
         const float SafeAreaPortion = 0.05f;
 
-        public List<Vector2> lasers = new List<Vector2>();
-
-        public static bool Shoot = false;
-
-        Random random = new Random();
-
         public Player(int x, int y) 
         {
-            //Load spaceship
+            //Load spaceship texture
             ship = Global.content.Load<Texture2D>("Textures\\spaceship");
-            lasertexture = Global.content.Load<Texture2D>("Textures\\laser");
 
             // Texture data
             shipTextureData =
@@ -48,6 +40,7 @@ namespace Space_Invaders
             shipPosition.X = (safeBounds.Width - ship.Width) / 2;
             shipPosition.Y = safeBounds.Height - ship.Height;
 
+            // Initialize ship laser
             laser = new ShipLaser(x, y);
         }
 
@@ -66,11 +59,16 @@ namespace Space_Invaders
             {
                 shipPosition.X += shipMoveSpeed;
             }
+            // Shoot with space
             if (keyboard.IsKeyDown(Keys.Space))
             {
-                laser.laserPositions.Add(new Vector2(shipPosition.X + 15, shipPosition.Y));
-                
+                // Shoot new laser when last laser has been removed. 
+                if (laser.nLasers < 1)
+                {
+                    laser.laserPositions.Add(new Vector2(shipPosition.X + 15, shipPosition.Y -10));
+                }
             }
+            // Update laser
             laser.Update(gameTime);
 
                 // Prevent the ship from moving off of the screen
@@ -80,10 +78,11 @@ namespace Space_Invaders
 
         public void Draw(GameTime gameTime)
         {
+            // Draw laser
+            laser.Draw(gameTime);
+            
             // Draw spaceship
             Global.spriteBatch.Draw(ship, shipPosition, Color.White);
-
-            laser.Draw(gameTime);
         }
     }
 }
