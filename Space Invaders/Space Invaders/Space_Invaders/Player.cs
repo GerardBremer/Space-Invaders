@@ -46,6 +46,11 @@ namespace Space_Invaders
 
         public void Update(GameTime gameTime)
         {
+            // Get the bounding rectangle of the ship
+            Rectangle shipRectangle =
+               new Rectangle((int)shipPosition.X, (int)shipPosition.Y,
+                   ship.Width, ship.Height);
+
             // Get input from keyboard
             KeyboardState keyboard = Keyboard.GetState();
             // TODO: Add your update logic here

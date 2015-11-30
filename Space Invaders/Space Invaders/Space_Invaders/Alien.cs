@@ -33,6 +33,11 @@ namespace Space_Invaders
 
         public void Update(GameTime gameTime)
         {
+            // Get the bounding rectangle of the alien
+            Rectangle alienRectangle =
+               new Rectangle((int)position.X, (int)position.Y,
+                   texture.Width, texture.Height);
+
             // If aliens hit right wall, move down and move towards left wall
             if (rightWall)
             {

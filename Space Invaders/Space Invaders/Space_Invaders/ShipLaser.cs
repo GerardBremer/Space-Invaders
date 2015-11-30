@@ -13,6 +13,8 @@ namespace Space_Invaders
         public List<Vector2> laserPositions = new List<Vector2>();
         const int LaserSpeed = -5;
         public int nLasers;
+        public bool alienHit;
+        private Alien alien;
 
         public ShipLaser(int x, int y)
         {                         
@@ -27,14 +29,8 @@ namespace Space_Invaders
 
         public void Update(GameTime gameTime)
         {
-
-            //Get the bounding rectangle of the ship
-            //Rectangle shipRectangle =
-            //    new Rectangle((int)shipPosition.X, (int)shipPosition.Y,
-            //       ship.Width, ship.Height);
-
             // Update each laser
-            //shipHit = false;
+            alienHit = false;
 
             for (int i = 0; i < laserPositions.Count; i++)
             {
@@ -44,16 +40,16 @@ namespace Space_Invaders
                                 laserPositions[i].Y + LaserSpeed);
 
                 // Get the bounding rectangle of this laser
-                Rectangle blockRectangle =
+                Rectangle laserRectangle =
                     new Rectangle((int)laserPositions[i].X, (int)laserPositions[i].Y,
                     laser.Width, laser.Height);
 
                 // Check collision with ship
-                /*if (CollisionDetection.IntersectPixels(shipRectangle, shipTextureData,
-                                    blockRectangle, laserTextureData))
-                {
-                    shipHit = true;
-                } */
+                //if (CollisionDetection.IntersectPixels(laserRectangle, laserTextureData,
+                //                    alien.alienRectangle, laserTextureData))
+                //{
+               //     alienHit = true;
+               // } 
 
                 // Give nLasers the same value as number of lasers in the list.
                 nLasers = laserPositions.Count;
@@ -80,6 +76,6 @@ namespace Space_Invaders
                 {
                     Global.spriteBatch.Draw(laser, laserPosition, Color.White);
                 }
-        }   
+        }
     }
 }
