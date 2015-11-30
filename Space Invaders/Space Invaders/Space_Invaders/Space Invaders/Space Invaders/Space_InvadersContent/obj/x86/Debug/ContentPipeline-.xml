@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\alien.xnb</Output>
-      <Time>2015-11-30T10:17:43.7125356+01:00</Time>
+      <Output>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\alien.xnb</Output>
+      <Time>2015-11-25T09:51:19.2243138+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\laser.bmp</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\laser.xnb</Output>
-      <Time>2015-11-30T10:17:43.7135359+01:00</Time>
+      <Output>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\laser.xnb</Output>
+      <Time>2015-11-25T09:51:19.2626706+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\spaceship.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\spaceship.xnb</Output>
-      <Time>2015-11-30T10:17:43.7135359+01:00</Time>
+      <Output>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\spaceship.xnb</Output>
+      <Time>2015-11-25T09:51:19.2676736+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\TileSets\part1_tileset.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset.xnb</Output>
-      <Time>2015-11-30T10:17:43.7075323+01:00</Time>
+      <Output>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset.xnb</Output>
+      <Time>2015-11-25T09:51:27.5668014+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\TileSets\part1_tileset2.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset2.xnb</Output>
-      <Time>2015-11-30T10:17:43.7095328+01:00</Time>
+      <Output>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset2.xnb</Output>
+      <Time>2015-11-25T09:51:27.5718035+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\TileSets\part1_tileset3.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset3.xnb</Output>
-      <Time>2015-11-30T10:17:43.7105339+01:00</Time>
+      <Output>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset3.xnb</Output>
+      <Time>2015-11-25T09:51:27.575807+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\TileSets\part1_tileset4.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset4.xnb</Output>
-      <Time>2015-11-30T10:17:43.7115346+01:00</Time>
+      <Output>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset4.xnb</Output>
+      <Time>2015-11-25T09:51:27.5818106+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -71,10 +71,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_InvadersContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_InvadersContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_InvadersContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_InvadersContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
