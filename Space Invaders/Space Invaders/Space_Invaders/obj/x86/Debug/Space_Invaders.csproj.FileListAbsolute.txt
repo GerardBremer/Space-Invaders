@@ -24,3 +24,16 @@ C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Inva
 C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\obj\x86\Debug\Space_Invaders.exe
 C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\obj\x86\Debug\Space_Invaders.pdb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\alien.xnb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\laser.xnb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\spaceship.xnb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset.xnb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset2.xnb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset3.xnb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Content\Textures\TileSets\part1_tileset4.xnb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Space_Invaders.exe
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\bin\x86\Debug\Space_Invaders.pdb
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\obj\x86\Debug\Space_Invaders.csprojResolveAssemblyReference.cache
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\obj\x86\Debug\Space_Invaders.exe
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_Invaders\obj\x86\Debug\Space_Invaders.pdb

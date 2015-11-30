@@ -22,6 +22,7 @@ namespace Space_Invaders
             position.Y = y;
 
             texture = Global.content.Load<Texture2D>("Textures\\alien");
+            //Defines starting point / starting velocity
             rightWall = true;
             leftWall = false;
             velocity.X = 3f;
@@ -41,13 +42,13 @@ namespace Space_Invaders
             // If aliens hit right wall, move down and move towards left wall
             if (rightWall)
             {
-                velocity.X = 2f;
+                velocity.X = 1.5f;
                 position.X += velocity.X;
             }
             // If aliens hit left wall, move down and move towards right wall 
             if (leftWall)
             {
-                velocity.X = 2f;
+                velocity.X = 1.5f;
                 position.X -= velocity.X;
             }
             if (position.X >= Global.width - 40)

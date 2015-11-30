@@ -1,2 +1,3 @@
 C:\Users\Gerard Bremer\documents\visual studio 2013\Projects\Space Invaders\Space Invaders\Space_InvadersContent\obj\x86\Debug\Space_InvadersContent.contentprojResolveAssemblyReference.cache
 C:\Users\Gerard Bremer\Documents\GitHub\Space Invaders\Space-Invaders\Space Invaders\Space Invaders\Space_InvadersContent\obj\x86\Debug\Space_InvadersContent.contentprojResolveAssemblyReference.cache
+D:\wamp\www\Space-Invaders\Space Invaders\Space Invaders\Space_InvadersContent\obj\x86\Debug\Space_InvadersContent.contentprojResolveAssemblyReference.cache

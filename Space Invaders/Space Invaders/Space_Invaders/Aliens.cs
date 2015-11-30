@@ -15,8 +15,9 @@ namespace Space_Invaders
 
         public Aliens(int nCols, int nRows)
         {
+            //Defines alien amount / Alien spacing
             this.nColInvaders = nCols;
-            this.nInvaders = nRows * nCols - 1;
+            this.nInvaders = nRows * nCols -1;  
             for (int i = 0; i <= nInvaders; i++)
                 aAliens.Add(new Alien((i % nColInvaders) * 80 + 112, (i / nColInvaders) * 64 + 49)); 
         }

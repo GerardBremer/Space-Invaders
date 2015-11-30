@@ -44,7 +44,7 @@ namespace Space_Invaders
                     new Rectangle((int)laserPositions[i].X, (int)laserPositions[i].Y,
                     laser.Width, laser.Height);
 
-                // Check collision with ship
+              //   Check collision with ship
                 //if (CollisionDetection.IntersectPixels(laserRectangle, laserTextureData,
                 //                    alien.alienRectangle, laserTextureData))
                 //{
