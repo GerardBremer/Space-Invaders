@@ -28,7 +28,7 @@ namespace Space_Invaders
             laser.GetData(laserTextureData);
         }
 
-        public void Update(GameTime gameTime)
+        public void LaserUpdate(GameTime gameTime)
         {
              //Spawn new lasers
             if (random.NextDouble() < LaserSpawnProbability)
@@ -78,7 +78,7 @@ namespace Space_Invaders
             }
         }
 
-        public void Draw(GameTime gameTime)
+        public void LaserDraw(GameTime gameTime)
         {
             //Global.spriteBatch.Draw(laser, position, Color.White);
             // Draw lasers  

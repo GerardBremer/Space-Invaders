@@ -32,7 +32,7 @@ namespace Space_Invaders
             laser = new Laser(x, y);
         }
 
-        public void Update(GameTime gameTime)
+        public void AlienUpdate(GameTime gameTime)
         {
             // Get the bounding rectangle of the alien
             Rectangle alienRectangle =
@@ -70,7 +70,7 @@ namespace Space_Invaders
 
             ///}
             ///
-            laser.Update(gameTime);
+            laser.LaserUpdate(gameTime);
         }
 
         /*public void Shoot()
@@ -80,14 +80,14 @@ namespace Space_Invaders
             laser.position = new Vector2(position.X + laser);
         }*/
 
-        public void Draw(GameTime gameTime)
+        public void AlienDraw(GameTime gameTime)
         {
             Global.spriteBatch.Draw(texture, position, Color.White);
 
             // Spawn new lasers
             //if (random.NextDouble() < LaserSpawnProbability)
             //{
-            laser.Draw(gameTime);
+            laser.LaserDraw(gameTime);
             //}
         }
 

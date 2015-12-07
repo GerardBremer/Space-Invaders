@@ -27,7 +27,7 @@ namespace Space_Invaders
             laser.GetData(laserTextureData);
         }
 
-        public void Update(GameTime gameTime)
+        public void ShiplaserUpdate(GameTime gameTime)
         {
             // Update each laser
             alienHit = false;
@@ -69,7 +69,7 @@ namespace Space_Invaders
             }
         }
 
-        public void Draw(GameTime gameTime)
+        public void ShiplaserDraw(GameTime gameTime)
         {
             // Draw lasers  
                 foreach (Vector2 laserPosition in laserPositions)

@@ -44,7 +44,7 @@ namespace Space_Invaders
             laser = new ShipLaser(x, y);
         }
 
-        public void Update(GameTime gameTime)
+        public void PlayerUpdate(GameTime gameTime)
         {
             // Get the bounding rectangle of the ship
             Rectangle shipRectangle =
@@ -74,17 +74,17 @@ namespace Space_Invaders
                 }
             }
             // Update laser
-            laser.Update(gameTime);
+            laser.ShiplaserUpdate(gameTime);
 
                 // Prevent the ship from moving off of the screen
                 shipPosition.X = MathHelper.Clamp(shipPosition.X,
                     safeBounds.Left, safeBounds.Right - ship.Width);
         }
 
-        public void Draw(GameTime gameTime)
+        public void PlayerDraw(GameTime gameTime)
         {
             // Draw laser
-            laser.Draw(gameTime);
+            laser.ShiplaserDraw(gameTime);
             
             // Draw spaceship
             Global.spriteBatch.Draw(ship, shipPosition, Color.White);

@@ -26,14 +26,14 @@ namespace Space_Invaders
         {
             // Update game objects
             foreach (Alien a in aAliens)
-                a.Update(gameTime);
+                a.AlienUpdate(gameTime);
                 //a.Update(rnd.Next()==3);
         }
 
         public  void Draw(GameTime gameTime)
         {
             foreach (Alien a in aAliens)
-                a.Draw(gameTime);
+                a.AlienDraw(gameTime);
         }
     }
 }

@@ -100,7 +100,7 @@ namespace Space_Invaders
             // Update game objects
             aliens.Update(gameTime);
 
-            player.Update(gameTime);
+            player.PlayerUpdate(gameTime);
 
             base.Update(gameTime);
         }
@@ -153,7 +153,7 @@ namespace Space_Invaders
             aliens.Draw(gameTime);
 
             // Draw player
-            player.Draw(gameTime);
+            player.PlayerDraw(gameTime);
 
             spriteBatch.End();
 
