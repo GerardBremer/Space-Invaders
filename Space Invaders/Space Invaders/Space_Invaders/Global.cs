@@ -19,9 +19,7 @@ namespace Space_Invaders
         static public GraphicsDevice GraphicsDevice
         {
             get
-            {
-                return _graphicsDevice;
-            }
+            { return _graphicsDevice; }
 
             set
             {

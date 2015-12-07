@@ -13,6 +13,7 @@ namespace Space_Invaders
         List<Vector2> laserPositions = new List<Vector2>();
         float LaserSpawnProbability = 0.0005f;
         const int LaserSpeed = 5;
+        public Boolean shipHit;
 
         // Random for laser spawns
         Random random = new Random();
@@ -58,12 +59,13 @@ namespace Space_Invaders
                     new Rectangle((int)laserPositions[i].X, (int)laserPositions[i].Y,
                     laser.Width, laser.Height);
 
-                // Check collision with ship
-                /*if (CollisionDetection.IntersectPixels(shipRectangle, shipTextureData,
+              /*  // Check collision with ship
+                if (CollisionDetection.IntersectPixels(shipRectangle, shipTextureData,
                                     blockRectangle, laserTextureData))
                 {
                     shipHit = true;
-                } */
+                } 
+            */
 
                 // Remove this laser if it has gone off the screen
                 if (laserPositions[i].Y > Window.ClientBounds.Height)

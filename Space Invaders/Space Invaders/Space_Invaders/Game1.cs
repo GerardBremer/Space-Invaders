@@ -61,8 +61,8 @@ namespace Space_Invaders
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Global.spriteBatch = spriteBatch;
 
-            // Aliens
-            aliens = new Aliens(8, 4); // number of aliens on row, number of rows
+            // Aliens x amount of object on y amount of roads
+            aliens = new Aliens(8, 4); 
             // Player
             player = new Player(1, 1);
         }
@@ -99,9 +99,8 @@ namespace Space_Invaders
         {
             // Update game objects
             aliens.Update(gameTime);
-
             player.PlayerUpdate(gameTime);
-
+      
             base.Update(gameTime);
         }
 
@@ -111,49 +110,42 @@ namespace Space_Invaders
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.White);
-
             // TODO: Add your drawing code here
             // Change the background to red when the player was hit by a laser
-            if (shipHit)
-            {
-                GraphicsDevice.Clear(Color.Red);
-            }
+            GraphicsDevice.Clear(Color.White);
+
+            if (shipHit == true)
+            {GraphicsDevice.Clear(Color.Red);}
             else
-            {
-                GraphicsDevice.Clear(Color.CornflowerBlue);
-            }
+            {GraphicsDevice.Clear(Color.CornflowerBlue);}
 
             spriteBatch.Begin();
 
-            // Draw tileset
-            Vector2 firstSquare = new Vector2(Camera.Location.X / 32, Camera.Location.Y / 32);
-            int firstX = (int)firstSquare.X;
-            int firstY = (int)firstSquare.Y;
+                // Draw tileset
+                Vector2 firstSquare = new Vector2(Camera.Location.X / 32, Camera.Location.Y / 32);
+                int firstX = (int)firstSquare.X;
+                int firstY = (int)firstSquare.Y;
 
-            Vector2 squareOffset = new Vector2(Camera.Location.X % 32, Camera.Location.Y % 32);
-            int offsetX = (int)squareOffset.X;
-            int offsetY = (int)squareOffset.Y;
+                Vector2 squareOffset = new Vector2(Camera.Location.X % 32, Camera.Location.Y % 32);
+                int offsetX = (int)squareOffset.X;
+                int offsetY = (int)squareOffset.Y;
 
-            for (int y = 0; y < squaresDown; y++)
-            {
-                for (int x = 0; x < squaresAcross; x++)
+                for (int y = 0; y < squaresDown; y++)
                 {
-                    spriteBatch.Draw(
-                        Tile.TileSetTexture,  
-                        new Rectangle
-                            ((x * 16) - offsetX, (y * 16) // Space between tiles
-                            - offsetY, 16, 16),           // Size of tiles
-                        Tile.GetSourceRectangle(myMap.Rows[y + firstY].Columns[x + firstX].TileID),
-                        Color.White);
+                    for (int x = 0; x < squaresAcross; x++)
+                    {
+                        spriteBatch.Draw(
+                            Tile.TileSetTexture,  
+                            new Rectangle
+                                ((x * 16) - offsetX, (y * 16) // Space between tiles
+                                - offsetY, 16, 16),           // Size of tiles
+                            Tile.GetSourceRectangle(myMap.Rows[y + firstY].Columns[x + firstX].TileID),
+                            Color.White);
+                    }
                 }
-            }
 
-            // Draw aliens
-            aliens.Draw(gameTime);
-
-            // Draw player
-            player.PlayerDraw(gameTime);
+                aliens.AliensDraw(gameTime);
+                player.PlayerDraw(gameTime);
 
             spriteBatch.End();
 

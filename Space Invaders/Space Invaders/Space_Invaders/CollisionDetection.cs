@@ -45,7 +45,6 @@ namespace Space_Invaders
                     }
                 }
             }
-
             // No pixel intersection found
             return false;
         }

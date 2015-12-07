@@ -27,25 +27,22 @@ namespace Space_Invaders
                 }
                 Rows.Add(thisRow);
             }
-
             // Create Sample Map Data
-            Rows[0].Columns[0].TileID = 2;
-            Rows[0].Columns[1].TileID = 2;
-            Rows[0].Columns[2].TileID = 2;
-            Rows[0].Columns[3].TileID = 2;
-            Rows[0].Columns[4].TileID = 2;
-            Rows[0].Columns[5].TileID = 2;
-            Rows[0].Columns[5].TileID = 2;
+           Rows[0].Columns[0].TileID = 2;
+           Rows[0].Columns[1].TileID = 2;
+           Rows[0].Columns[2].TileID = 2;
+           Rows[0].Columns[3].TileID = 2;
+           Rows[0].Columns[4].TileID = 2;
+           Rows[0].Columns[5].TileID = 2;
+           Rows[0].Columns[5].TileID = 2;
 
-            Rows[1].Columns[3].TileID = 3;
-            Rows[1].Columns[4].TileID = 1;
-            Rows[1].Columns[5].TileID = 1;
-            Rows[1].Columns[6].TileID = 1;
-            Rows[1].Columns[7].TileID = 1;
-            Rows[1].Columns[0].TileID = 2;
-
-
-            // End Create Sample Map Data
+           Rows[1].Columns[3].TileID = 3;
+           Rows[1].Columns[4].TileID = 1;
+           Rows[1].Columns[5].TileID = 1;
+           Rows[1].Columns[6].TileID = 1;
+           Rows[1].Columns[7].TileID = 1;
+           Rows[1].Columns[0].TileID = 2;
+           // End Create Sample Map Data
         }
     }
 }

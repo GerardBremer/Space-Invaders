@@ -30,7 +30,7 @@ namespace Space_Invaders
                 //a.Update(rnd.Next()==3);
         }
 
-        public  void Draw(GameTime gameTime)
+        public  void AliensDraw(GameTime gameTime)
         {
             foreach (Alien a in aAliens)
                 a.AlienDraw(gameTime);
