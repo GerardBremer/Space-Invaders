@@ -15,6 +15,8 @@ namespace Space_Invaders
         private Boolean rightWall;
         Random random = new Random();
         private Laser laser;
+        public Color[] alienTextureData;
+        public Rectangle alienRectangle;
 
         public Alien(int x, int y)
         {
@@ -30,6 +32,10 @@ namespace Space_Invaders
 
             // Laser
             laser = new Laser(x, y);
+
+            alienTextureData =
+            new Color[texture.Width * texture.Height];
+            texture.GetData(alienTextureData);
         }
 
         public void AlienUpdate(GameTime gameTime)

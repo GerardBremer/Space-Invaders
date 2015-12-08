@@ -13,9 +13,7 @@ namespace Space_Invaders
         public List<Vector2> laserPositions = new List<Vector2>();
         const int LaserSpeed = -5;
         public int nLasers;
-        public bool alienHit;
-        private Alien alien;
-
+    
         public ShipLaser(int x, int y)
         {                         
             // Load laser texture
@@ -27,10 +25,12 @@ namespace Space_Invaders
             laser.GetData(laserTextureData);
         }
 
+       
+
         public void ShiplaserUpdate(GameTime gameTime)
         {
             // Update each laser
-            alienHit = false;
+
 
             for (int i = 0; i < laserPositions.Count; i++)
             {
@@ -44,12 +44,7 @@ namespace Space_Invaders
                     new Rectangle((int)laserPositions[i].X, (int)laserPositions[i].Y,
                     laser.Width, laser.Height);
 
-              //   Check collision with ship
-                //if (CollisionDetection.IntersectPixels(laserRectangle, laserTextureData,
-                //                    alien.alienRectangle, laserTextureData))
-                //{
-               //     alienHit = true;
-               // } 
+               // Check collision with alien
 
                 // Give nLasers the same value as number of lasers in the list.
                 nLasers = laserPositions.Count;

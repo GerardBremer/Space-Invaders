@@ -7,6 +7,9 @@ namespace Space_Invaders
 {
     /// <summary>
     /// This is the main type for your game
+    /// Rienk Werkt aan het menu
+    /// Gerard werkt aan van alles en nog wat
+    /// Robin werkt aan de UFO + van alles en nog wat
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
@@ -25,6 +28,9 @@ namespace Space_Invaders
         // Player
         private Player player;
         private ShipLaser plaser;
+
+        // UFO - Werk Robin aan
+        private UFO ufo;
 
         // For when a collision is detected
         bool shipHit = false;
